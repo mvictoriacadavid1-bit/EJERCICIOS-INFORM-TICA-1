@@ -1,12 +1,12 @@
-sueldo1 = float(input("Ingrese el salaria del empleado1: "))
-sueldo2 = float(input("Ingrese el salario del empleado2: "))
-sueldo3 = float(input("Ingrese el salario del empleado3: "))
+nota1 = float(input("Ingrese un numero: "))
+nota2 = float(input("Ingrese un numero: "))
+nota3 = float(input("Ingrese un numero: "))
+nota4 = float(input("Ingrese un numero: "))
+nota5 = float(input("Ingrese un numero: "))
 
-nuevo_sueldo1 = sueldo1*1.10
-nuevo_sueldo2 = sueldo2*1.12
-nuevo_sueldo3 = sueldo3*1.15
+promedio = (nota1*0.30) + (nota2*0.15) + (nota3*0.15) + (nota4*0.20) + (nota5*0.20)
 
-print(f"El nuevo salario del empleado 1 es $: {nuevo_sueldo1}")
-print(f"El nuevo salario del empleado 2 es $: {nuevo_sueldo2}")
-print(f"El nuevo salario del empleado 3 es $: {nuevo_sueldo3}")
+if promedio>=3:
+    print("APROBADO")
+    print(f"El promedio de las cinco notas fue: {promedio}")
 

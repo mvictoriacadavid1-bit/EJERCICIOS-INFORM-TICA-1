@@ -1,6 +1,9 @@
-grado = float(input("Ingrese un número: "))
-pi = 3.14159
+a = float(input("Ingrese un numero: ")) 
+b = float(input("Ingrese un numero: "))
 
-grados_a_radianes = (grado*pi)/180
-
-print(f"{grado}° en radianes es {grados_a_radianes}")
+if a>b:
+    print(f"a: {a} es mayor que b: {b}")
+elif a == b:
+    print(f"a: {a} es igual a b: {b}")
+else:
+    print(f"a: {a} es menor que b: {b}")

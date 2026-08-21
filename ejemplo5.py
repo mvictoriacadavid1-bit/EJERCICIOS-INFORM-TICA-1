@@ -1,10 +1,18 @@
-número_de_pasos = float(input("Ingrese un número: "))
+nombres = input("Ingrese un nombres: ")
+número_de_inscripción = float(input("Ingrese número de inscripción: "))
+estrato = float(input("Ingrese el estrato: "))
+patrimonio = float(input("Ingrese el patrimonio: "))
 
-centímetros = (número_de_pasos*45)
-metros = centímetros/100
-kilómetros = metros/1000
+if patrimonio>2000000 and estrato>3:
+    incremento = patrimonio*0.03
+    pago_matrícula = 50000 + incremento
+else:
+    pago_matrícula = 50000
 
-print(f"El número de centrímetros que avanzó la persona es: {centímetros} cm")
-print(f"El número de metros que avanzó la persona es: {metros} m")
-print(f"El número de kilómetros que avanzó la persona es: {kilómetros} km")
+print(f"----------------------------------------------------------")
+print(f"Número de la inscripción: {número_de_inscripción}")
+print(f"Nombres: {nombres}")
+print(f"Pago de matrícula: {pago_matrícula}")
+print(f"----------------------------------------------------------")
+
 

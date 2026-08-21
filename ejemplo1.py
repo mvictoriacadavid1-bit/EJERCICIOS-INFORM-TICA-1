@@ -1,7 +1,10 @@
-número = float(input("Ingrese un número: "))
+a = float(input("Ingrese un numero: ")) 
+b = float(input("Ingrese un numero: "))
 
-cuadrado = número**2
-cubo = número**3
-
-print(f"El cuadrado de {número} es {cuadrado}")
-print(f"El cubo de {número} es {cubo}")
+if a>b:
+    print(f"a: {a} es mayor que b: {b}")
+elif a == b:
+    print(f"a: {a} es igual a b: {b}")
+else:
+    print(f"a: {a} es menor que b: {b}")
+    
